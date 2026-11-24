@@ -77,6 +77,7 @@ Doppelklick auf **`Konsole-oeffnen.bat`**. Dort ist `node` bereits die mitgelief
 | `node formio-export-forms.js --env=rps.prod [--out=<ordner>]` | Formulardefinitionen und Aktionen exportieren |
 | `node formio-export-stage.js --env=rps.prod [--out=<ordner>]` | Stage-Konfiguration exportieren |
 | `node formio-delete-old-submissions.js --env=rps.prod --days=<X> --form=<pfad>` | Alte Submissions löschen. Ohne `--execute` nur Trockenlauf; vor dem Löschen wird gesichert |
+| `node formio-delete-actions.js --env=rps.prod (--form=<pfad>[,...] \| --all-forms) [--type=<name>]` | Aktionen mit Methode DELETE finden und entfernen. Ohne `--execute` nur Trockenlauf; vor Änderungen wird in `backups\` gesichert. Bestätigung mit „loeschen“ |
 | `node formio-update-year.js --env=rps.prod [--year=<jahr>]` | Abruf für alle Monate eines Jahres |
 | `node formio-promote-forms.js --from=<env> --to=<env> [--dir=<ordner>] --dry-run` | Formulare zwischen Umgebungen übernehmen (nur mit exportierten Formularen) |
 
